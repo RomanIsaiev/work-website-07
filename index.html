@@ -6,50 +6,68 @@
     <title>Курс для лікарів</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
+      <div class="main-info-container">
+        <p class="start-course">Старт 1 листопада</p>
+        <p class="course-spiker">Спікер Примак А.В.</p>
+      </div>
       <div class="container">
-        <div class="main-info">
-          <p class="start-course">Старт 1 листопада</p>
-          <p class="course-spiker">Спікер Примак А.В.</p>
-        </div>
-        <h1 class="header-title">Аутоімунні <span>захворювання</span></h1>
+        <h1 class="header-title">Аутоімунні <br /><span>захворювання</span></h1>
         <p class="header-title-description">Функціональний підхід</p>
         <p class="header-description">
           Цілісний погляд на імунологію і аутоімунні захворювання
         </p>
         <div class="header-anchor-container">
-          <a href="header-anchor"></a>
-          <img src="" alt="arrow" height="20" width="20" />
+          <a class="header-anchor-button link" href="header-anchor"
+            >детальніше</a
+          >
+          <svg height="20" width="20">
+            <use href="./images/sprite-svg.svg#header-btn-arrow"></use>
+          </svg>
         </div>
-        <picture>
-          <img
-            src="./images/header-mobile-doctor-1x.png"
-            alt="Андрій Володимирович Примак"
-            width="296"
-            height="319"
-          />
-        </picture>
-        <div class="header-doctor-container">
-          <a class="header-doctor-anchor" href="">про спікера</a>
-          <img src="" alt="" width="15" height="15" />
+        <div class="about-speaker-container">
+          <picture>
+            <img
+              class="header-doctor-image image"
+              src="./images/header-mobile-doctor-1x.png"
+              alt="Андрій Володимирович Примак"
+              width="296"
+              height="319"
+            />
+          </picture>
+          <div class="header-doctor-container">
+            <a class="header-doctor-anchor link" href="">про спікера</a>
+            <svg width="18" height="18">
+              <use href="./images/sprite-svg.svg#header-doctor-btn-arrow"></use>
+            </svg>
+          </div>
         </div>
       </div>
+      <!-- <div class="for-doctors-container">
+        <p class="move-string">Курс для лікарів</p>
+        <svg height="17" width="17">
+          <use href="./images/sprite-svg.svg#header-move-string-plus"></use>
+        </svg>
+      </div> -->
     </header>
     <main>
       <section class="section-one">
         <div class="container">
           <h2 class="sect-one-title">Переваги курсу:</h2>
-          <ul class="sect-one-list">
+          <ul class="sect-one-list list">
             <li class="list-item">
-              <h3 class="list-item-title">Сучасна наукова інформація</h3>
+              <h3 class="list-item-title">Сучасна наукова<br />інформація</h3>
               <p class="list-item-text">
                 про причини, патологічні механізми, які призводять до
                 автоімунних захворювань
@@ -57,7 +75,7 @@
             </li>
             <li class="list-item">
               <h3 class="list-item-title">
-                Висвітлення допоміжних схем лікування
+                Висвітлення допоміжних <br />схем лікування
               </h3>
               <p class="list-item-text">
                 які можуть суттєво покращити ефективність традиційного підходу
@@ -85,6 +103,7 @@
               </h3>
             </li>
           </ul>
+          <h2 class="start-timer-title">Початок курсу через:</h2>
           <div class="timer">
             <div class="timer__items">
               <div class="timer__item timer__days">00</div>
@@ -97,16 +116,19 @@
       </section>
       <section class="section-two">
         <div class="container">
-          <h2 class="sect-two-title">Для кого актуальний курс?</h2>
+          <h2 class="sect-two-title">
+            Для кого <br />
+            актуальний курс?
+          </h2>
           <p class="sect-two-description">
             Курс корисний для медичних працівників, що прагнуть сформувати
             комплексне розуміння причин виникнення та патологічних механізмів,
             методів діагностики та лікування аутоімунних захворювань
           </p>
-          <ul class="sect-two-list">
+          <ul class="sect-two-list list">
             <li class="list-item">
               <h3 class="list-item-title">Ревматологам</h3>
-              <p class="list-item-text">
+              <p class="list-item-text sect-two-space">
                 Ширше поглянете на причини та патогенетичні механізми, які
                 сприяють розвитку автоагресії.
               </p>
@@ -126,7 +148,7 @@
             </li>
             <li class="list-item">
               <h3 class="list-item-title">Гастроентерологам і дієтологам</h3>
-              <p class="list-item-text">
+              <p class="list-item-text sect-two-space">
                 Актуалізуєте інформацію про важливу роль шлунково-кишкового
                 тракту в етіології, патогенезі аутоімунних захворювань і способи
                 корекції патологій кишківника для зменшення їх загострення.
@@ -147,7 +169,7 @@
             </li>
             <li class="list-item">
               <h3 class="list-item-title">Пластичним хірургам</h3>
-              <p class="list-item-text">
+              <p class="list-item-text sect-two-space">
                 Отримаєте якісну наукову інформацію щодо аутоімунного запального
                 синдрому ASIA, вірогідності виникнення аутоімунних симптомів у
                 пацієнтів з імплантами молочної залози.
@@ -167,7 +189,7 @@
             </li>
             <li class="list-item">
               <h3 class="list-item-title">Дерматологам і косметологам</h3>
-              <p class="list-item-text">
+              <p class="list-item-text sect-two-space">
                 Здобудете нові знання з етіології й патогенезу псоріазу,
                 системного склерозу та інших аутоімунних захворювань, які
                 вражають шкіру.
@@ -185,13 +207,20 @@
               </p>
             </li>
           </ul>
-          <a class="sect-two-anchor" href="">пройти курс</a>
+          <a class="sect-two-anchor link" href="">пройти курс</a>
         </div>
       </section>
       <section class="section-three">
         <div class="container">
           <h2 class="sect-three-title">Важливість теми:</h2>
-          <picture><img src="" alt="" width="320" height="208" /></picture>
+          <picture
+            ><img
+              class="sect-three-image image"
+              src="./images/section-three-image-mobile-1x.jpg"
+              alt=""
+              width="320"
+              height="208"
+          /></picture>
           <div class="wrapper">
             <p class="three-wrapper-text">
               Маючи понад <span>30 років клінічної практики,</span> останні 20
@@ -223,10 +252,12 @@
             </ul>
           </div>
           <p class="sect-three-text">
-            Кожний пацієнт індивідуальний, він має унікальну генетику, на яку
-            нашаровуються власні епігенетичні зміни, він перебуває в унікальному
-            навколишньому середовищі, яке може як погіршувати, так і покращувати
-            його стан.
+            Кожний пацієнт індивідуальний,<span
+              >він має унікальну генетику, на яку нашаровуються власні
+              епігенетичні зміни, він перебуває в унікальному навколишньому
+              середовищі, яке може як погіршувати, так і покращувати його
+              стан.</span
+            >
           </p>
           <p class="sect-three-text-two">
             Важливим напрямком діагностики та лікування є визначення цих
@@ -237,36 +268,202 @@
       <section class="section-four">
         <div class="container">
           <h2 class="sect-four-title">
-            Курс включає в себе <span>5 лекцій*:</span>
+            Курс включає в <br />
+            себе <span>5 лекцій*:</span>
           </h2>
-          <ul class="sect-four-list">
-            <li class="four-list-item">
+          <ul class="sect-four-list list">
+            <li class="four-list-item four-item-decoration">
               <div class="item-title-container">
                 <svg width="30" height="30">
-                  <use href=""></use>
+                  <use href="./images/sprite-svg.svg#four-number-one"></use>
                 </svg>
                 <h3 class="item-title">
-                  Основи імунної системи <br /><span>(онлайн+запис)</span>
+                  Основи імунної системи<br /><span>(онлайн+запис)</span>
                 </h3>
               </div>
               <div class="date-container">
                 <div class="date-wrapper">
-                  <div>
+                  <div class="date-flex">
                     <svg width="12" height="13">
-                      <use href=""></use>
+                      <use href="./images/sprite-svg.svg#four-callendar"></use>
                     </svg>
                     <p class="date-text">Дата</p>
                   </div>
                   <p class="date">01.11.2023</p>
                 </div>
                 <div class="date-wrapper">
-                  <div>
+                  <div class="date-flex">
                     <svg width="13" height="13">
-                      <use href=""></use>
+                      <use href="./images/sprite-svg.svg#four-clock"></use>
                     </svg>
                     <p class="date-text">Час</p>
                   </div>
                   <p class="date">18:00-21:00</p>
+                </div>
+              </div>
+            </li>
+            <li class="four-list-item four-item-decoration">
+              <div class="item-title-container">
+                <svg width="30" height="30">
+                  <use href="./images/sprite-svg.svg#four-number-two"></use>
+                </svg>
+                <h3 class="item-title">
+                  Фіброміалгія<br /><span>(онлайн+запис)</span>
+                </h3>
+              </div>
+              <div class="date-container">
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="12" height="13">
+                      <use href="./images/sprite-svg.svg#four-callendar"></use>
+                    </svg>
+                    <p class="date-text">Дата</p>
+                  </div>
+                  <p class="date">08.11.2023</p>
+                </div>
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="13" height="13">
+                      <use href="./images/sprite-svg.svg#four-clock"></use>
+                    </svg>
+                    <p class="date-text">Час</p>
+                  </div>
+                  <p class="date">18:00-21:00</p>
+                </div>
+              </div>
+            </li>
+            <li class="four-list-item four-item-decoration">
+              <div class="item-title-container">
+                <svg width="30" height="30">
+                  <use href="./images/sprite-svg.svg#four-number-three"></use>
+                </svg>
+                <h3 class="item-title">
+                  Целіакія<br /><span>(онлайн+запис)</span>
+                </h3>
+              </div>
+              <div class="date-container">
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="12" height="13">
+                      <use href="./images/sprite-svg.svg#four-callendar"></use>
+                    </svg>
+                    <p class="date-text">Дата</p>
+                  </div>
+                  <p class="date">15.11.2023</p>
+                </div>
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="13" height="13">
+                      <use href="./images/sprite-svg.svg#four-clock"></use>
+                    </svg>
+                    <p class="date-text">Час</p>
+                  </div>
+                  <p class="date">18:00-21:00</p>
+                </div>
+              </div>
+            </li>
+            <li class="four-list-item four-item-decoration">
+              <div class="item-title-container">
+                <svg width="30" height="30">
+                  <use href="./images/sprite-svg.svg#four-number-four"></use>
+                </svg>
+                <h3 class="item-title">
+                  Синдром ASIA<br /><span>(онлайн+запис)</span>
+                </h3>
+              </div>
+              <div class="date-container">
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="12" height="13">
+                      <use href="./images/sprite-svg.svg#four-callendar"></use>
+                    </svg>
+                    <p class="date-text">Дата</p>
+                  </div>
+                  <p class="date">22.11.2023</p>
+                </div>
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="13" height="13">
+                      <use href="./images/sprite-svg.svg#four-clock"></use>
+                    </svg>
+                    <p class="date-text">Час</p>
+                  </div>
+                  <p class="date">18:00-21:00</p>
+                </div>
+              </div>
+            </li>
+            <li class="four-list-item">
+              <div class="item-title-container">
+                <svg width="30" height="30">
+                  <use href="./images/sprite-svg.svg#four-number-five"></use>
+                </svg>
+                <h3 class="item-title">
+                  Функціональний підхід до аутоімунних захворювань<br /><span
+                    >(офлайн+онлайн і запис)</span
+                  >
+                </h3>
+              </div>
+              <p class="four-lesson-description">
+                Лекція*, що складається з 3 частин
+              </p>
+              <div class="date-container date-container-space">
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="12" height="13">
+                      <use href="./images/sprite-svg.svg#four-callendar"></use>
+                    </svg>
+                    <p class="date-text">Дата</p>
+                  </div>
+                  <p class="date">01.12.2023</p>
+                </div>
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="13" height="13">
+                      <use href="./images/sprite-svg.svg#four-clock"></use>
+                    </svg>
+                    <p class="date-text">Час</p>
+                  </div>
+                  <p class="date">11:00-18:00</p>
+                </div>
+              </div>
+              <div class="date-container date-container-space">
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="12" height="13">
+                      <use href="./images/sprite-svg.svg#four-callendar"></use>
+                    </svg>
+                    <p class="date-text">Дата</p>
+                  </div>
+                  <p class="date">02.12.2023</p>
+                </div>
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="13" height="13">
+                      <use href="./images/sprite-svg.svg#four-clock"></use>
+                    </svg>
+                    <p class="date-text">Час</p>
+                  </div>
+                  <p class="date">11:00-18:00</p>
+                </div>
+              </div>
+              <div class="date-container">
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="12" height="13">
+                      <use href="./images/sprite-svg.svg#four-callendar"></use>
+                    </svg>
+                    <p class="date-text">Дата</p>
+                  </div>
+                  <p class="date">03.12.2023</p>
+                </div>
+                <div class="date-wrapper">
+                  <div class="date-flex">
+                    <svg width="13" height="13">
+                      <use href="./images/sprite-svg.svg#four-clock"></use>
+                    </svg>
+                    <p class="date-text">Час</p>
+                  </div>
+                  <p class="date">11:00-18:00</p>
                 </div>
               </div>
             </li>
@@ -299,7 +496,7 @@
             </div>
           </div>
           <h3 class="four-lesson-title">Окремі лекції*</h3>
-          <ul class="four-lesson-list">
+          <ul class="four-lesson-list list">
             <li class="list-item">
               <h4 class="item-title">Основи імунної системи</h4>
               <div class="buy-container">
@@ -319,7 +516,7 @@
               </div>
             </li>
             <li class="list-item">
-              <h4 class="item-title"></h4>
+              <h4 class="item-title">Целіакія</h4>
               <div class="buy-container">
                 <p class="four-price">Вартість 350 грн</p>
                 <button class="four-buy-button" type="button">
@@ -328,7 +525,7 @@
               </div>
             </li>
             <li class="list-item">
-              <h4 class="item-title"></h4>
+              <h4 class="item-title">Синдром ASIA</h4>
               <div class="buy-container">
                 <p class="four-price">Вартість 350 грн</p>
                 <button class="four-buy-button" type="button">
@@ -344,14 +541,12 @@
           <h2 class="sect-five-title">Автор курсу:</h2>
           <picture
             ><img
+              class="section-five-doctor image"
               src="./images/section-five-doctor-1x.png"
               alt="Андрій Володимирович Примак"
               width="296"
               height="348"
           /></picture>
-          <div class="five-text-wrapper">
-            <p class="five-name">Андрій Володимирович Примак</p>
-          </div>
           <ul class="sect-five-list">
             <li class="list-item">
               <p class="list-item-text">
@@ -387,198 +582,223 @@
             </li>
           </ul>
           <div class="five-get-wrapper">
-            <ul class="get-course-list">
+            <div class="get-title-wrapper">
+              <h2 class="get-title">Що ви отримаєте на курсі:</h2>
+            </div>
+            <ul class="get-course-list list">
               <li class="list-item">
-                <p class="list-item-text">Базові основи сучасної імунології</p>
+                <p class="list-item-text">
+                  Базові основи сучасної <span>імунології</span>
+                </p>
               </li>
               <li class="list-item">
                 <p class="list-item-text">
                   Глибокий аналіз етіології, патогенезу, діагностики та
-                  лікування фіброміалгії, синдрому який дуже часто супроводжує
-                  автоімунні розлади
+                  лікування <span>фіброміалгії</span>, синдрому який дуже часто
+                  супроводжує автоімунні розлади
                 </p>
               </li>
               <li class="list-item">
                 <p class="list-item-text">
-                  Сучасну інформацію по факторах ризику виникнення целіакії, її
-                  діагностиці, паралельних захворюваннях, варіантах перебігу
-                  хвороби, ролі глютену в розвитку цього захворювання, а також
-                  шляхах лікування целіакії, яка є частим супутником і причиною
-                  виникнення аутоімунних порушень
+                  Сучасну інформацію по факторах ризику виникнення
+                  <span>целіакії</span>, її діагностиці, паралельних
+                  захворюваннях, варіантах перебігу хвороби, ролі глютену в
+                  розвитку цього захворювання, а також шляхах лікування
+                  целіакії, яка є частим супутником і причиною виникнення
+                  аутоімунних порушень
                 </p>
               </li>
               <li class="list-item">
                 <p class="list-item-text">
-                  Особливості синдрому ASIA, який часто призводить до
-                  автоімунних захворювань, генетичну схильність до нього, вплив
-                  силіконових імплантів і вакцинації на розвиток цього синдрому
+                  Особливості синдрому <span>ASIA</span>, який часто призводить
+                  до автоімунних захворювань, генетичну схильність до нього,
+                  вплив силіконових імплантів і вакцинації на розвиток цього
+                  синдрому
                 </p>
               </li>
               <li class="list-item">
                 <p class="list-item-text">
                   Практичні рекомендації з лікування аутоімунних захворювань,
-                  проведення якісної діагностики, спираючись на функціональний
+                  проведення якісної діагностики, спираючись на
+                  <span>функціональний</span>
                   підхід в медицині
                 </p>
               </li>
             </ul>
           </div>
           <h2 class="reviews-title">відгуки слухачів:</h2>
-          <div class="siema">
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/0.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/1.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/2.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/3.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/4.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/5.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/6.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/7.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/8.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/9.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/10.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/11.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/12.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
-            </div>
-            <div>
-              <picture>
-                <img
-                  class="siema-image"
-                  src="./images/reviews/mobile-1x/13.jpg"
-                  alt="reviews"
-                  width="294"
-                  height="294"
-              /></picture>
+          <div class="siema-container">
+            <div class="siema">
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/0.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/1.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/2.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/3.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/4.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/5.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/6.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/7.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/8.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/9.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/10.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/11.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/12.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
+              <div>
+                <picture>
+                  <img
+                    class="siema-image"
+                    src="./images/reviews/mobile-1x/13.jpg"
+                    alt="reviews"
+                    width="294"
+                    height="294"
+                /></picture>
+              </div>
             </div>
           </div>
-          <button class="prev">prev</button>
-          <button class="next">next</button>
+          <div class="siema-button-control">
+            <button class="prev">
+              <svg width="50" height="50">
+                <use href="./images/sprite-svg.svg#reviews-left-btn"></use>
+              </svg>
+            </button>
+            <button class="next">
+              <svg width="50" height="50">
+                <use href="./images/sprite-svg.svg#reviews-right-btn"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="five-text-wrapper">
+          <p class="five-name">Андрій Володимирович Примак</p>
         </div>
       </section>
       <section class="section-six">
         <div class="container">
-          <h2 class="sect-six-title">Відповіді на <span>запитання:</span></h2>
+          <h2 class="sect-six-title">
+            Відповіді на <br /><span>запитання:</span>
+          </h2>
           <div class="faq">
             <div class="question open isOpen question-decoration-one">
               <div class="question-name">
                 <p>Для кого підходить курс?</p>
-                <svg>
-                  <use href=""></use>
+                <svg width="18" height="18">
+                  <use href="./images/sprite-svg.svg#question-plus"></use>
                 </svg>
               </div>
               <div class="content">
@@ -592,49 +812,68 @@
             <div class="question question-decoration">
               <div class="question-name">
                 <p>Чи будуть клінічні кейси?</p>
-                <svg>
-                  <use href=""></use>
+                <svg width="18" height="18">
+                  <use href="./images/sprite-svg.svg#question-plus"></use>
                 </svg>
               </div>
-              <div class="content"></div>
+              <div class="content">
+                <p>Так, клінічні випадки будуть розглянуті.</p>
+              </div>
             </div>
             <div class="question question-decoration">
               <div class="question-name">
                 <p>Чи будуть відео у записі?</p>
-                <svg>
-                  <use href=""></use>
+                <svg width="18" height="18">
+                  <use href="./images/sprite-svg.svg#question-plus"></use>
                 </svg>
               </div>
-              <div class="content"></div>
+              <div class="content">
+                <p>
+                  Так, усім учасникам курсу буде наданий доступ до запису в
+                  особистому кабінеті
+                </p>
+              </div>
             </div>
             <div class="question question-decoration">
               <div class="question-name">
                 <p>Якою мовою буде проводитись виступ?</p>
-                <svg>
-                  <use href=""></use>
+                <svg width="18" height="18">
+                  <use href="./images/sprite-svg.svg#question-plus"></use>
                 </svg>
               </div>
-              <div class="content"></div>
+              <div class="content"><p>Українською мовою</p></div>
             </div>
             <div class="question question-decoration">
               <div class="question-name">
                 <p>Який термін доступу до запису?</p>
-                <svg>
-                  <use href=""></use>
+                <svg width="18" height="18">
+                  <use href="./images/sprite-svg.svg#question-plus"></use>
                 </svg>
               </div>
-              <div class="content"></div>
+              <div class="content">
+                <p>Доступ до запису курсу буде протягом року</p>
+              </div>
             </div>
             <div class="question question-decoration">
               <div class="question-name">
                 <p>
                   Чи можу я дивитись курс, якщо у мене немає медичної освіти?
                 </p>
-                <svg>
-                  <use href=""></use>
+                <svg width="18" height="18">
+                  <use href="./images/sprite-svg.svg#question-plus"></use>
                 </svg>
               </div>
-              <div class="content"></div>
+              <div class="content">
+                <p>
+                  Курс підготовлений спеціально для медичних спеціалістів, з
+                  врахуванням того, що слухачі розуміються на медичній
+                  термінології.
+                </p>
+                <p>
+                  Якщо ви прагнете пройти курс для власного розвитку, то ласкаво
+                  просимо.
+                </p>
+              </div>
             </div>
           </div>
         </div>
