@@ -58,7 +58,7 @@ p {
   margin-left: auto;
   margin-right: auto;
 
-  max-width: 428px;
+  max-width: 360px;
 }
 
 /* header */
@@ -66,6 +66,10 @@ p {
 .header {
   padding-top: 0;
   padding-bottom: 60px;
+  position: relative;
+}
+
+.header .container {
   position: relative;
 }
 
@@ -180,7 +184,7 @@ p {
 .header-doctor-container {
   position: absolute;
   left: 50%;
-  bottom: 50px;
+  bottom: 30px;
 
   display: flex;
   padding: 10px 10px;
@@ -210,25 +214,50 @@ p {
   position: relative;
 }
 
+.doctor-star {
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 32px;
+  animation: spin 10s linear 0s infinite;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .header-doctor-image {
   margin-left: auto;
   margin-right: auto;
 }
 
+/* marquee */
+
 .for-doctors-container {
   position: absolute;
-  bottom: 80px;
+  bottom: 50px;
   left: 0;
 
-  display: flex;
-  width: 627px;
+  padding: 8px 10px;
+
+  height: 44px;
+  width: 100%;
+
   transform: rotate(-3deg);
-  padding: 8px 100px;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 
   background: #a1b997;
+}
+
+.move-container {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .for-doctors-container .move-string {
@@ -241,6 +270,10 @@ p {
   text-transform: uppercase;
 }
 
+#supermarquee {
+  color: #8089ff;
+  font-size: 48px;
+}
 /* section-one */
 
 .section-one {
@@ -916,6 +949,22 @@ p {
   background: #e9f0e9;
 }
 
+.section-five .container {
+  position: relative;
+
+  z-index: 1;
+}
+
+.doctor-star-second {
+  position: absolute;
+  top: 125px;
+  left: 43px;
+  z-index: -1;
+
+  animation: spin 10s linear 0s infinite;
+  z-index: -5;
+}
+
 .sect-five-title {
   color: #1b1b1b;
   text-align: center;
@@ -942,6 +991,8 @@ p {
   padding: 10px 20px;
 
   background: #515e4c;
+
+  z-index: 2;
 }
 
 .five-name {

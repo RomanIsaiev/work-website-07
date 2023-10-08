@@ -37,12 +37,26 @@
           </svg>
         </div>
         <div class="about-speaker-container">
+          <img
+            class="doctor-star"
+            src="./images/header-mobile-doctor-star.svg"
+            alt="star"
+          />
           <picture>
+            <source
+              srcset="
+                ./images/header-mobile-doctor-1x.png 1x,
+                ./images/header-mobile-doctor-2x.png 2x
+              "
+              media="(min-width: 360px)"
+              width="256"
+              height="319"
+            />
             <img
               class="header-doctor-image image"
               src="./images/header-mobile-doctor-1x.png"
               alt="Андрій Володимирович Примак"
-              width="296"
+              width="256"
               height="319"
             />
           </picture>
@@ -54,12 +68,9 @@
           </div>
         </div>
       </div>
-      <!-- <div class="for-doctors-container">
-        <p class="move-string">Курс для лікарів</p>
-        <svg height="17" width="17">
-          <use href="./images/sprite-svg.svg#header-move-string-plus"></use>
-        </svg>
-      </div> -->
+      <div class="marquee for-doctors-container">
+        <div id="supermarquee"></div>
+      </div>
     </header>
     <main>
       <section class="section-one">
@@ -213,8 +224,16 @@
       <section class="section-three">
         <div class="container">
           <h2 class="sect-three-title">Важливість теми:</h2>
-          <picture
-            ><img
+          <picture>
+            <source
+              srcset="
+                ./images/section-three-image-mobile-1x.jpg 1x,
+                ./images/section-three-image-mobile-2x.jpg 2x
+              "
+              media="(min-width: 360px)"
+              width="320"
+              height="208" />
+            <img
               class="sect-three-image image"
               src="./images/section-three-image-mobile-1x.jpg"
               alt=""
@@ -539,13 +558,26 @@
       <section class="section-five">
         <div class="container">
           <h2 class="sect-five-title">Автор курсу:</h2>
-          <picture
-            ><img
+          <img
+            class="doctor-star-second"
+            src="./images/sect-five-bk-star.svg"
+            alt="star"
+          />
+          <picture>
+            <source
+              srcset="
+                ./images/section-five-doctor-1x.png 1x,
+                ./images/section-five-doctor-2x.png 2x
+              "
+              media="(min-width: 360px)"
+              width="234"
+              height="322" />
+            <img
               class="section-five-doctor image"
               src="./images/section-five-doctor-1x.png"
               alt="Андрій Володимирович Примак"
-              width="296"
-              height="348"
+              width="234"
+              height="322"
           /></picture>
           <ul class="sect-five-list">
             <li class="list-item">
@@ -888,6 +920,7 @@
         </p>
       </div>
     </footer>
+    <script src="./js/jquery-3.7.0.min.js" type="module"></script>
     <script src="./js/siema.min.js"></script>
     <script>
       const mySiema = new Siema({
@@ -911,7 +944,8 @@
         .querySelector(".next")
         .addEventListener("click", () => mySiema.next());
     </script>
-    <script src="./js/jquery-3.7.0.min.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sp-supermarquee@latest/dist/SuperMarquee.min.js"></script>
+    <script src="./js/move-string.js" type="module"></script>
     <script src="./js/faq.js" type="module"></script>
     <script src="./js/timer.js" type="module"></script>
   </body>
