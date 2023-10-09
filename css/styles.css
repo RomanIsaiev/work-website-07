@@ -1771,6 +1771,10 @@ p {
   margin-right: auto;
 }
 
+.sect-five-list .list-item:first-child {
+  list-style: none;
+}
+
 .sect-five-list .list-item span {
   font-weight: 700;
 }
