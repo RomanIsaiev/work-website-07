@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $hours.dataset.title = declensionNum(hours, ["година", "години", "годин"]);
     $minutes.dataset.title = declensionNum(minutes, [
       "хвилина",
-      "хвилины",
+      "хвилини",
       "хвилин",
     ]);
     $seconds.dataset.title = declensionNum(seconds, [

@@ -33,14 +33,14 @@
           <p class="header-description">
             Цілісний погляд на імунологію і аутоімунні захворювання
           </p>
-          <div class="header-anchor-container">
-            <a class="header-anchor-button link" href="header-anchor"
-              >детальніше</a
-            >
-            <svg height="20" width="20">
-              <use href="./images/sprite-svg.svg#header-btn-arrow"></use>
-            </svg>
-          </div>
+          <a class="header-anchor-button link" href="#header-more-details">
+            <div class="header-anchor-container">
+              <p>детальніше</p>
+              <svg height="20" width="20">
+                <use href="./images/sprite-svg.svg#header-btn-arrow"></use>
+              </svg>
+            </div>
+          </a>
           <div class="about-speaker-container">
             <img
               class="doctor-star"
@@ -48,6 +48,15 @@
               alt="star"
             />
             <picture>
+              <source
+                srcset="
+                  ./images/header-desktop-doctor-1x.png 1x,
+                  ./images/header-desktop-doctor-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+                width="486"
+                height="606"
+              />
               <source
                 srcset="
                   ./images/header-tablet-doctor-1x.png 1x,
@@ -74,14 +83,16 @@
                 height="319"
               />
             </picture>
-            <div class="header-doctor-container">
-              <a class="header-doctor-anchor link" href="">про спікера</a>
-              <svg width="18" height="18">
-                <use
-                  href="./images/sprite-svg.svg#header-doctor-btn-arrow"
-                ></use>
-              </svg>
-            </div>
+            <a class="header-doctor-anchor link" href="#course-author">
+              <div class="header-doctor-container">
+                про спікера
+                <svg width="18" height="18">
+                  <use
+                    href="./images/sprite-svg.svg#header-doctor-btn-arrow"
+                  ></use>
+                </svg>
+              </div>
+            </a>
           </div>
         </div>
         <div class="marquee for-doctors-container">
@@ -233,65 +244,77 @@
               </p>
             </li>
           </ul>
-          <a class="sect-two-anchor link" href="">пройти курс</a>
+          <a class="sect-two-anchor link" href="#header-more-details"
+            >пройти курс</a
+          >
         </div>
       </section>
       <section class="section-three">
         <div class="container">
           <h2 class="sect-three-title">Важливість теми:</h2>
-          <picture>
-            <source
-              srcset="
-                ./images/section-three-image-tablet-1x.jpg 1x,
-                ./images/section-three-image-tablet-2x.jpg 2x
-              "
-              media="(min-width: 768px)"
-              width="588"
-              height="382" />
-            <source
-              srcset="
-                ./images/section-three-image-mobile-1x.jpg 1x,
-                ./images/section-three-image-mobile-2x.jpg 2x
-              "
-              media="(min-width: 360px)"
-              width="320"
-              height="208" />
-            <img
-              class="sect-three-image image"
-              src="./images/section-three-image-mobile-1x.jpg"
-              alt=""
-              width="320"
-              height="208"
-          /></picture>
-          <div class="wrapper">
-            <p class="three-wrapper-text">
-              Маючи понад <span>30 років клінічної практики,</span> останні 20
-              років я спостерігаю збільшення кількості випадків аутоімунних
-              порушень у пацієнтів та погіршення їх перебігу, через:
-            </p>
-            <ul class="three-wrapper-list">
-              <li class="wrapper-list-item">
-                <p class="list-item-text">суттєві зміни в харчуванні</p>
-              </li>
-              <li class="wrapper-list-item">
-                <p class="list-item-text">
-                  порушення балансу кишкового мікробіому та пошкодження
-                  кишкового бар’єру
-                </p>
-              </li>
-              <li class="wrapper-list-item">
-                <p class="list-item-text">
-                  суттєве збільшення рівня токсичних впливів на організм, в тому
-                  числі і деяких ліків та ад'ювантів, які посилюють системний
-                  запальний процес в організмі
-                </p>
-              </li>
-              <li class="wrapper-list-item">
-                <p class="list-item-text">
-                  збільшення інтенсивності фізіологічного стресу
-                </p>
-              </li>
-            </ul>
+          <div class="three-flex-container">
+            <picture>
+              <source
+                srcset="
+                  ./images/section-three-image-desktop-1x.jpg 1x,
+                  ./images/section-three-image-desktop-2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+                width="460"
+                height="395" />
+              <source
+                srcset="
+                  ./images/section-three-image-tablet-1x.jpg 1x,
+                  ./images/section-three-image-tablet-2x.jpg 2x
+                "
+                media="(min-width: 768px)"
+                width="588"
+                height="382" />
+              <source
+                srcset="
+                  ./images/section-three-image-mobile-1x.jpg 1x,
+                  ./images/section-three-image-mobile-2x.jpg 2x
+                "
+                media="(min-width: 360px)"
+                width="320"
+                height="208" />
+              <img
+                class="sect-three-image image"
+                src="./images/section-three-image-mobile-1x.jpg"
+                alt=""
+                width="320"
+                height="208"
+            /></picture>
+            <div class="wrapper">
+              <p class="three-wrapper-text">
+                Маючи понад <span>30 років клінічної практики,</span> останні 20
+                років я спостерігаю збільшення кількості випадків аутоімунних
+                порушень у пацієнтів та погіршення їх перебігу, через:
+              </p>
+              <ul class="three-wrapper-list">
+                <li class="wrapper-list-item">
+                  <p class="list-item-text">суттєві зміни в харчуванні</p>
+                </li>
+                <li class="wrapper-list-item">
+                  <p class="list-item-text">
+                    порушення балансу кишкового мікробіому та пошкодження
+                    кишкового бар’єру
+                  </p>
+                </li>
+                <li class="wrapper-list-item">
+                  <p class="list-item-text">
+                    суттєве збільшення рівня токсичних впливів на організм, в
+                    тому числі і деяких ліків та ад'ювантів, які посилюють
+                    системний запальний процес в організмі
+                  </p>
+                </li>
+                <li class="wrapper-list-item">
+                  <p class="list-item-text">
+                    збільшення інтенсивності фізіологічного стресу
+                  </p>
+                </li>
+              </ul>
+            </div>
           </div>
           <p class="sect-three-text">
             Кожний пацієнт індивідуальний,<span
@@ -309,212 +332,228 @@
       </section>
       <section class="section-four">
         <div class="container">
-          <h2 class="sect-four-title">
-            Курс включає в <br />
-            себе <span>5 лекцій*:</span>
-          </h2>
-          <ul class="sect-four-list list">
-            <li class="four-list-item four-item-decoration">
-              <div class="item-title-container">
-                <svg width="30" height="30">
-                  <use href="./images/sprite-svg.svg#four-number-one"></use>
-                </svg>
-                <h3 class="item-title">
-                  Основи імунної системи<br /><span>(онлайн+запис)</span>
-                </h3>
-              </div>
-              <div class="date-container">
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="12" height="13">
-                      <use href="./images/sprite-svg.svg#four-callendar"></use>
-                    </svg>
-                    <p class="date-text">Дата</p>
-                  </div>
-                  <p class="date">01.11.2023</p>
+          <div class="four-border-container" id="header-more-details">
+            <h2 class="sect-four-title">
+              Курс включає в <br />
+              себе <span>5 лекцій*:</span>
+            </h2>
+            <ul class="sect-four-list list">
+              <li class="four-list-item four-item-decoration">
+                <div class="item-title-container">
+                  <svg width="30" height="30">
+                    <use href="./images/sprite-svg.svg#four-number-one"></use>
+                  </svg>
+                  <h3 class="item-title">
+                    Основи імунної системи<br /><span>(онлайн+запис)</span>
+                  </h3>
                 </div>
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="13" height="13">
-                      <use href="./images/sprite-svg.svg#four-clock"></use>
-                    </svg>
-                    <p class="date-text">Час</p>
+                <div class="date-container date-container-decoration">
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="12" height="13">
+                        <use
+                          href="./images/sprite-svg.svg#four-callendar"
+                        ></use>
+                      </svg>
+                      <p class="date-text">Дата</p>
+                    </div>
+                    <p class="date">01.11.2023</p>
                   </div>
-                  <p class="date">18:00-21:00</p>
-                </div>
-              </div>
-            </li>
-            <li class="four-list-item four-item-decoration">
-              <div class="item-title-container">
-                <svg width="30" height="30">
-                  <use href="./images/sprite-svg.svg#four-number-two"></use>
-                </svg>
-                <h3 class="item-title">
-                  Фіброміалгія<br /><span>(онлайн+запис)</span>
-                </h3>
-              </div>
-              <div class="date-container">
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="12" height="13">
-                      <use href="./images/sprite-svg.svg#four-callendar"></use>
-                    </svg>
-                    <p class="date-text">Дата</p>
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="13" height="13">
+                        <use href="./images/sprite-svg.svg#four-clock"></use>
+                      </svg>
+                      <p class="date-text">Час</p>
+                    </div>
+                    <p class="date">18:00-21:00</p>
                   </div>
-                  <p class="date">08.11.2023</p>
                 </div>
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="13" height="13">
-                      <use href="./images/sprite-svg.svg#four-clock"></use>
-                    </svg>
-                    <p class="date-text">Час</p>
+              </li>
+              <li class="four-list-item four-item-decoration">
+                <div class="item-title-container">
+                  <svg width="30" height="30">
+                    <use href="./images/sprite-svg.svg#four-number-two"></use>
+                  </svg>
+                  <h3 class="item-title">
+                    Фіброміалгія<br /><span>(онлайн+запис)</span>
+                  </h3>
+                </div>
+                <div class="date-container date-container-decoration">
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="12" height="13">
+                        <use
+                          href="./images/sprite-svg.svg#four-callendar"
+                        ></use>
+                      </svg>
+                      <p class="date-text">Дата</p>
+                    </div>
+                    <p class="date">08.11.2023</p>
                   </div>
-                  <p class="date">18:00-21:00</p>
-                </div>
-              </div>
-            </li>
-            <li class="four-list-item four-item-decoration">
-              <div class="item-title-container">
-                <svg width="30" height="30">
-                  <use href="./images/sprite-svg.svg#four-number-three"></use>
-                </svg>
-                <h3 class="item-title">
-                  Целіакія<br /><span>(онлайн+запис)</span>
-                </h3>
-              </div>
-              <div class="date-container">
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="12" height="13">
-                      <use href="./images/sprite-svg.svg#four-callendar"></use>
-                    </svg>
-                    <p class="date-text">Дата</p>
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="13" height="13">
+                        <use href="./images/sprite-svg.svg#four-clock"></use>
+                      </svg>
+                      <p class="date-text">Час</p>
+                    </div>
+                    <p class="date">18:00-21:00</p>
                   </div>
-                  <p class="date">15.11.2023</p>
                 </div>
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="13" height="13">
-                      <use href="./images/sprite-svg.svg#four-clock"></use>
-                    </svg>
-                    <p class="date-text">Час</p>
+              </li>
+              <li class="four-list-item four-item-decoration">
+                <div class="item-title-container">
+                  <svg width="30" height="30">
+                    <use href="./images/sprite-svg.svg#four-number-three"></use>
+                  </svg>
+                  <h3 class="item-title">
+                    Целіакія<br /><span>(онлайн+запис)</span>
+                  </h3>
+                </div>
+                <div class="date-container date-container-decoration">
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="12" height="13">
+                        <use
+                          href="./images/sprite-svg.svg#four-callendar"
+                        ></use>
+                      </svg>
+                      <p class="date-text">Дата</p>
+                    </div>
+                    <p class="date">15.11.2023</p>
                   </div>
-                  <p class="date">18:00-21:00</p>
-                </div>
-              </div>
-            </li>
-            <li class="four-list-item four-item-decoration">
-              <div class="item-title-container">
-                <svg width="30" height="30">
-                  <use href="./images/sprite-svg.svg#four-number-four"></use>
-                </svg>
-                <h3 class="item-title">
-                  Синдром ASIA<br /><span>(онлайн+запис)</span>
-                </h3>
-              </div>
-              <div class="date-container">
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="12" height="13">
-                      <use href="./images/sprite-svg.svg#four-callendar"></use>
-                    </svg>
-                    <p class="date-text">Дата</p>
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="13" height="13">
+                        <use href="./images/sprite-svg.svg#four-clock"></use>
+                      </svg>
+                      <p class="date-text">Час</p>
+                    </div>
+                    <p class="date">18:00-21:00</p>
                   </div>
-                  <p class="date">22.11.2023</p>
                 </div>
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="13" height="13">
-                      <use href="./images/sprite-svg.svg#four-clock"></use>
-                    </svg>
-                    <p class="date-text">Час</p>
+              </li>
+              <li class="four-list-item four-item-decoration">
+                <div class="item-title-container">
+                  <svg width="30" height="30">
+                    <use href="./images/sprite-svg.svg#four-number-four"></use>
+                  </svg>
+                  <h3 class="item-title">
+                    Синдром ASIA<br /><span>(онлайн+запис)</span>
+                  </h3>
+                </div>
+                <div class="date-container date-container-decoration">
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="12" height="13">
+                        <use
+                          href="./images/sprite-svg.svg#four-callendar"
+                        ></use>
+                      </svg>
+                      <p class="date-text">Дата</p>
+                    </div>
+                    <p class="date">22.11.2023</p>
                   </div>
-                  <p class="date">18:00-21:00</p>
-                </div>
-              </div>
-            </li>
-            <li class="four-list-item">
-              <div class="item-title-container">
-                <svg width="30" height="30">
-                  <use href="./images/sprite-svg.svg#four-number-five"></use>
-                </svg>
-                <h3 class="item-title">
-                  Функціональний підхід до аутоімунних захворювань<br /><span
-                    >(офлайн+онлайн і запис)</span
-                  >
-                </h3>
-              </div>
-              <p class="four-lesson-description">
-                Лекція*, що складається з 3 частин
-              </p>
-              <div class="date-container date-container-space">
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="12" height="13">
-                      <use href="./images/sprite-svg.svg#four-callendar"></use>
-                    </svg>
-                    <p class="date-text">Дата</p>
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="13" height="13">
+                        <use href="./images/sprite-svg.svg#four-clock"></use>
+                      </svg>
+                      <p class="date-text">Час</p>
+                    </div>
+                    <p class="date">18:00-21:00</p>
                   </div>
-                  <p class="date">01.12.2023</p>
                 </div>
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="13" height="13">
-                      <use href="./images/sprite-svg.svg#four-clock"></use>
-                    </svg>
-                    <p class="date-text">Час</p>
+              </li>
+              <li class="four-list-item">
+                <div class="item-title-container">
+                  <svg width="30" height="30">
+                    <use href="./images/sprite-svg.svg#four-number-five"></use>
+                  </svg>
+                  <h3 class="item-title">
+                    Функціональний підхід до аутоімунних захворювань<br /><span
+                      >(офлайн+онлайн і запис)</span
+                    >
+                  </h3>
+                </div>
+                <p class="four-lesson-description">
+                  Лекція*, що складається з 3 частин
+                </p>
+                <div class="date-container date-container-space">
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="12" height="13">
+                        <use
+                          href="./images/sprite-svg.svg#four-callendar"
+                        ></use>
+                      </svg>
+                      <p class="date-text">Дата</p>
+                    </div>
+                    <p class="date">01.12.2023</p>
                   </div>
-                  <p class="date">11:00-18:00</p>
-                </div>
-              </div>
-              <div class="date-container date-container-space">
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="12" height="13">
-                      <use href="./images/sprite-svg.svg#four-callendar"></use>
-                    </svg>
-                    <p class="date-text">Дата</p>
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="13" height="13">
+                        <use href="./images/sprite-svg.svg#four-clock"></use>
+                      </svg>
+                      <p class="date-text">Час</p>
+                    </div>
+                    <p class="date">11:00-18:00</p>
                   </div>
-                  <p class="date">02.12.2023</p>
                 </div>
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="13" height="13">
-                      <use href="./images/sprite-svg.svg#four-clock"></use>
-                    </svg>
-                    <p class="date-text">Час</p>
+                <div class="date-container date-container-space">
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="12" height="13">
+                        <use
+                          href="./images/sprite-svg.svg#four-callendar"
+                        ></use>
+                      </svg>
+                      <p class="date-text">Дата</p>
+                    </div>
+                    <p class="date">02.12.2023</p>
                   </div>
-                  <p class="date">11:00-18:00</p>
-                </div>
-              </div>
-              <div class="date-container">
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="12" height="13">
-                      <use href="./images/sprite-svg.svg#four-callendar"></use>
-                    </svg>
-                    <p class="date-text">Дата</p>
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="13" height="13">
+                        <use href="./images/sprite-svg.svg#four-clock"></use>
+                      </svg>
+                      <p class="date-text">Час</p>
+                    </div>
+                    <p class="date">11:00-18:00</p>
                   </div>
-                  <p class="date">03.12.2023</p>
                 </div>
-                <div class="date-wrapper">
-                  <div class="date-flex">
-                    <svg width="13" height="13">
-                      <use href="./images/sprite-svg.svg#four-clock"></use>
-                    </svg>
-                    <p class="date-text">Час</p>
+                <div class="date-container">
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="12" height="13">
+                        <use
+                          href="./images/sprite-svg.svg#four-callendar"
+                        ></use>
+                      </svg>
+                      <p class="date-text">Дата</p>
+                    </div>
+                    <p class="date">03.12.2023</p>
                   </div>
-                  <p class="date">11:00-18:00</p>
+                  <div class="date-wrapper">
+                    <div class="date-flex">
+                      <svg width="13" height="13">
+                        <use href="./images/sprite-svg.svg#four-clock"></use>
+                      </svg>
+                      <p class="date-text">Час</p>
+                    </div>
+                    <p class="date">11:00-18:00</p>
+                  </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-          <div class="buy-container">
-            <p class="four-price">Вартість 12 000 грн</p>
-            <button class="four-buy-button" type="button">пройти курс</button>
+              </li>
+            </ul>
+            <div class="buy-container">
+              <p class="four-price">Вартість 12 000 грн</p>
+              <button class="four-buy-button" type="button">пройти курс</button>
+            </div>
           </div>
-          <div class="wrapper">
+          <!-- <div class="wrapper">
             <h3 class="wrapper-title">Тільки вступний цикл</h3>
             <ul class="four-wrapper-list">
               <li class="list-item">
@@ -536,13 +575,13 @@
                 пройти вступний цикл
               </button>
             </div>
-          </div>
+          </div> -->
           <h3 class="four-lesson-title">Окремі лекції*</h3>
           <ul class="four-lesson-list list">
             <li class="list-item">
               <h4 class="item-title">Основи імунної системи</h4>
               <div class="buy-container">
-                <p class="four-price">Вартість 350 грн</p>
+                <p class="four-price">Вартість 700 грн</p>
                 <button class="four-buy-button" type="button">
                   Прослухати лекцію*
                 </button>
@@ -551,7 +590,7 @@
             <li class="list-item">
               <h4 class="item-title">Фіброміалгія</h4>
               <div class="buy-container">
-                <p class="four-price">Вартість 350 грн</p>
+                <p class="four-price">Вартість 700 грн</p>
                 <button class="four-buy-button" type="button">
                   Прослухати лекцію*
                 </button>
@@ -560,7 +599,7 @@
             <li class="list-item">
               <h4 class="item-title">Целіакія</h4>
               <div class="buy-container">
-                <p class="four-price">Вартість 350 грн</p>
+                <p class="four-price">Вартість 700 грн</p>
                 <button class="four-buy-button" type="button">
                   Прослухати лекцію*
                 </button>
@@ -569,7 +608,7 @@
             <li class="list-item">
               <h4 class="item-title">Синдром ASIA</h4>
               <div class="buy-container">
-                <p class="four-price">Вартість 350 грн</p>
+                <p class="four-price">Вартість 700 грн</p>
                 <button class="four-buy-button" type="button">
                   Прослухати лекцію*
                 </button>
@@ -578,72 +617,83 @@
           </ul>
         </div>
       </section>
-      <section class="section-five">
+      <section class="section-five" id="course-author">
         <div class="container">
           <h2 class="sect-five-title">Автор курсу:</h2>
-          <img
-            class="doctor-star-second"
-            src="./images/sect-five-bk-star.svg"
-            alt="star"
-          />
-          <picture>
-            <source
-              srcset="
-                ./images/section-five-doctor-tablet-1x.png 1x,
-                ./images/section-five-doctor-tablet-2x.png 2x
-              "
-              media="(min-width: 768px)"
-              width="383"
-              height="435" />
-            <source
-              srcset="
-                ./images/section-five-doctor-1x.png 1x,
-                ./images/section-five-doctor-2x.png 2x
-              "
-              media="(min-width: 360px)"
-              width="234"
-              height="322" />
+          <div class="five-flex-container">
             <img
-              class="section-five-doctor image"
-              src="./images/section-five-doctor-1x.png"
-              alt="Андрій Володимирович Примак"
-              width="234"
-              height="322"
-          /></picture>
-          <ul class="sect-five-list">
-            <li class="list-item">
-              <p class="list-item-text">
-                Лікар-терапевт, вищої категорії з
-                <span>клінічним досвідом понад 30 років</span>
-              </p>
-            </li>
-            <li class="list-item">
-              <p class="list-item-text">Ендокринолог</p>
-            </li>
-            <li class="list-item">
-              <p class="list-item-text">
-                Член Інституту Функціональної медицини IFM (США)
-              </p>
-            </li>
-            <li class="list-item">
-              <p class="list-item-text">
-                Засновник і провідний спеціаліст «Клініки Святого Даміана
-                Цілителя»
-              </p>
-            </li>
-            <li class="list-item">
-              <p class="list-item-text">
-                Автор книг "Метаболічний синдром", "Функціональний підхід у
-                лікуванні захворювань ШКТ", "Функціональний підхід у лікуванні
-                гормональних дисфункцій у жінок", "Бути здоровою просто"
-              </p>
-            </li>
-            <li class="list-item">
-              <p class="list-item-text">
-                Спікер конференцій з anti-aging медицини в Україні та Європі
-              </p>
-            </li>
-          </ul>
+              class="doctor-star-second"
+              src="./images/sect-five-bk-star.svg"
+              alt="star"
+            />
+            <picture>
+              <source
+                srcset="
+                  ./images/section-five-doctor-desktop-1x.png 1x,
+                  ./images/section-five-doctor-desktop-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+                width="480"
+                height="582" />
+              <source
+                srcset="
+                  ./images/section-five-doctor-tablet-1x.png 1x,
+                  ./images/section-five-doctor-tablet-2x.png 2x
+                "
+                media="(min-width: 768px)"
+                width="383"
+                height="435" />
+              <source
+                srcset="
+                  ./images/section-five-doctor-1x.png 1x,
+                  ./images/section-five-doctor-2x.png 2x
+                "
+                media="(min-width: 360px)"
+                width="234"
+                height="322" />
+              <img
+                class="section-five-doctor image"
+                src="./images/section-five-doctor-1x.png"
+                alt="Андрій Володимирович Примак"
+                width="234"
+                height="322"
+            /></picture>
+            <ul class="sect-five-list">
+              <h2 class="sect-five-title-desktop">Автор курсу:</h2>
+              <li class="list-item">
+                <p class="list-item-text">
+                  Лікар-терапевт, вищої категорії з
+                  <span>клінічним досвідом понад 30 років</span>
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="list-item-text">Ендокринолог</p>
+              </li>
+              <li class="list-item">
+                <p class="list-item-text">
+                  Член Інституту Функціональної медицини IFM (США)
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="list-item-text">
+                  Засновник і провідний спеціаліст «Клініки Святого Даміана
+                  Цілителя»
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="list-item-text">
+                  Автор книг "Метаболічний синдром", "Функціональний підхід у
+                  лікуванні захворювань ШКТ", "Функціональний підхід у лікуванні
+                  гормональних дисфункцій у жінок", "Бути здоровою просто"
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="list-item-text">
+                  Спікер конференцій з anti-aging медицини в Україні та Європі
+                </p>
+              </li>
+            </ul>
+          </div>
           <div class="five-get-wrapper">
             <div class="get-title-wrapper">
               <h2 class="get-title">Що ви отримаєте на курсі:</h2>
@@ -690,372 +740,370 @@
             </ul>
           </div>
           <h2 class="reviews-title">відгуки слухачів:</h2>
-          <div class="siema-container">
-            <div class="siema">
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/0.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/0.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/0.jpg 1x,
-                      ./images/reviews/mobile-2x/0.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/0.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/1.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/1.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/1.jpg 1x,
-                      ./images/reviews/mobile-2x/1.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/1.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/2.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/2.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/2.jpg 1x,
-                      ./images/reviews/mobile-2x/2.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/2.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/3.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/3.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/3.jpg 1x,
-                      ./images/reviews/mobile-2x/3.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/3.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/4.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/4.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/4.jpg 1x,
-                      ./images/reviews/mobile-2x/4.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/4.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/5.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/5.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/5.jpg 1x,
-                      ./images/reviews/mobile-2x/5.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/5.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/6.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/6.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/6.jpg 1x,
-                      ./images/reviews/mobile-2x/6.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/6.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/7.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/7.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/7.jpg 1x,
-                      ./images/reviews/mobile-2x/7.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/7.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/8.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/8.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/8.jpg 1x,
-                      ./images/reviews/mobile-2x/8.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/8.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/9.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/9.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/9.jpg 1x,
-                      ./images/reviews/mobile-2x/9.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/9.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/10.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/10.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/10.jpg 1x,
-                      ./images/reviews/mobile-2x/10.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/10.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/11.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/11.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/11.jpg 1x,
-                      ./images/reviews/mobile-2x/11.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/11.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/12.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/12.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/12.jpg 1x,
-                      ./images/reviews/mobile-2x/12.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/12.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
-              <div>
-                <picture>
-                  <source
-                    srcset="
-                      ./images/rewiews-tablet-desktop-1x/13.jpg 1x,
-                      ./images/rewiews-tablet-desktop-2x/13.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <source
-                    srcset="
-                      ./images/reviews/mobile-1x/13.jpg 1x,
-                      ./images/reviews/mobile-2x/13.jpg 2x
-                    "
-                    media="(min-width: 768px)"
-                    width="368"
-                    height="368" />
-                  <img
-                    class="siema-image"
-                    src="./images/reviews/mobile-1x/13.jpg"
-                    alt="reviews"
-                    width="294"
-                    height="294"
-                /></picture>
-              </div>
+          <div class="siema">
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/0.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/0.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/0.jpg 1x,
+                    ./images/reviews/mobile-2x/0.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/0.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/1.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/1.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/1.jpg 1x,
+                    ./images/reviews/mobile-2x/1.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/1.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/2.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/2.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/2.jpg 1x,
+                    ./images/reviews/mobile-2x/2.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/2.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/3.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/3.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/3.jpg 1x,
+                    ./images/reviews/mobile-2x/3.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/3.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/4.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/4.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/4.jpg 1x,
+                    ./images/reviews/mobile-2x/4.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/4.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/5.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/5.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/5.jpg 1x,
+                    ./images/reviews/mobile-2x/5.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/5.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/6.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/6.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/6.jpg 1x,
+                    ./images/reviews/mobile-2x/6.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/6.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/7.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/7.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/7.jpg 1x,
+                    ./images/reviews/mobile-2x/7.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/7.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/8.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/8.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/8.jpg 1x,
+                    ./images/reviews/mobile-2x/8.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/8.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/9.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/9.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/9.jpg 1x,
+                    ./images/reviews/mobile-2x/9.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/9.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/10.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/10.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/10.jpg 1x,
+                    ./images/reviews/mobile-2x/10.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/10.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/11.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/11.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/11.jpg 1x,
+                    ./images/reviews/mobile-2x/11.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/11.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/12.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/12.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/12.jpg 1x,
+                    ./images/reviews/mobile-2x/12.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/12.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
+            </div>
+            <div>
+              <picture>
+                <source
+                  srcset="
+                    ./images/rewiews-tablet-desktop-1x/13.jpg 1x,
+                    ./images/rewiews-tablet-desktop-2x/13.jpg 2x
+                  "
+                  media="(min-width: 1280px)"
+                  width="368"
+                  height="368" />
+                <source
+                  srcset="
+                    ./images/reviews/mobile-1x/13.jpg 1x,
+                    ./images/reviews/mobile-2x/13.jpg 2x
+                  "
+                  media="(max-width: 1279px)"
+                  width="368"
+                  height="368" />
+                <img
+                  class="siema-image"
+                  src="./images/reviews/mobile-1x/13.jpg"
+                  alt="reviews"
+                  width="294"
+                  height="294"
+              /></picture>
             </div>
           </div>
           <div class="siema-button-control">
@@ -1182,7 +1230,7 @@
         selector: ".siema",
         duration: 200,
         easing: "ease-out",
-        perPage: 1,
+        perPage: { 1280: 2 },
         startIndex: 0,
         draggable: true,
         multipleDrag: true,
