@@ -5,6 +5,7 @@ const mySuperMarquee = new SuperMarquee(
   document.getElementById("supermarquee"),
   {
     content: content,
+    speed: "slow",
   }
 );
 
