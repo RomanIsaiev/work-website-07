@@ -56,16 +56,21 @@ p {
 
   max-width: 360px;
 }
-
 /* header */
 
 .header {
-  padding-top: 0;
+  border-bottom: 1.5px solid #0e0e0e;
+}
+
+/* section-hero */
+
+.section-hero {
+  padding-top: 30px;
   padding-bottom: 60px;
   position: relative;
 }
 
-.header .container {
+.section-hero .container {
   position: relative;
 }
 
@@ -76,8 +81,10 @@ p {
 
   padding: 20px 20px;
 
-  border-bottom: 1.5px solid #0e0e0e;
-  margin-bottom: 30px;
+  max-width: 428px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .start-course {
@@ -279,13 +286,17 @@ p {
     max-width: 768px;
   }
 
-  .header .container {
+  .section-hero {
+    padding-top: 50px;
+  }
+
+  .section-hero .container {
     position: relative;
   }
 
   .main-info-container {
     padding: 20px 40px;
-    margin-bottom: 50px;
+    max-width: 768px;
   }
 
   .start-course {
@@ -333,8 +344,11 @@ p {
   }
 
   .doctor-star {
-    left: 17px;
-    bottom: 30px;
+    left: 10px;
+    bottom: 10px;
+
+    width: 323px;
+    height: 323px;
   }
 
   .for-doctors-container {
