@@ -550,7 +550,9 @@
             </ul>
             <div class="buy-container">
               <p class="four-price">Вартість 12 000 грн</p>
-              <button class="four-buy-button" type="button">пройти курс</button>
+              <button class="four-buy-button" type="button" data-modal-open-one>
+                пройти курс
+              </button>
             </div>
           </div>
           <!-- <div class="wrapper">
@@ -582,7 +584,11 @@
               <h4 class="item-title">Основи імунної системи</h4>
               <div class="buy-container">
                 <p class="four-price">Вартість 700 грн</p>
-                <button class="four-buy-button" type="button">
+                <button
+                  class="four-buy-button"
+                  type="button"
+                  data-modal-open-two
+                >
                   Прослухати лекцію*
                 </button>
               </div>
@@ -591,7 +597,11 @@
               <h4 class="item-title">Фіброміалгія</h4>
               <div class="buy-container">
                 <p class="four-price">Вартість 700 грн</p>
-                <button class="four-buy-button" type="button">
+                <button
+                  class="four-buy-button"
+                  type="button"
+                  data-modal-open-three
+                >
                   Прослухати лекцію*
                 </button>
               </div>
@@ -600,7 +610,11 @@
               <h4 class="item-title">Целіакія</h4>
               <div class="buy-container">
                 <p class="four-price">Вартість 700 грн</p>
-                <button class="four-buy-button" type="button">
+                <button
+                  class="four-buy-button"
+                  type="button"
+                  data-modal-open-four
+                >
                   Прослухати лекцію*
                 </button>
               </div>
@@ -609,7 +623,11 @@
               <h4 class="item-title">Синдром ASIA</h4>
               <div class="buy-container">
                 <p class="four-price">Вартість 700 грн</p>
-                <button class="four-buy-button" type="button">
+                <button
+                  class="four-buy-button"
+                  type="button"
+                  data-modal-open-five
+                >
                   Прослухати лекцію*
                 </button>
               </div>
@@ -1229,6 +1247,71 @@
           </div>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-modal1>
+        <div class="modal">
+          <button type="button" class="close-button" data-modal-close1>
+            <img
+              src="./images/close-modal-icon.svg"
+              width="30"
+              height="30"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1696754280"></div>
+        </div>
+      </div>
+      <div class="backdrop is-hidden" data-modal2>
+        <div class="modal">
+          <button type="button" class="close-button" data-modal-close2>
+            <img
+              src="./images/close-modal-icon.svg"
+              width="30"
+              height="30"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1696754402"></div>
+        </div>
+      </div>
+      <div class="backdrop is-hidden" data-modal3>
+        <div class="modal">
+          <button type="button" class="close-button" data-modal-close3>
+            <img
+              src="./images/close-modal-icon.svg"
+              width="30"
+              height="30"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1696754455"></div>
+        </div>
+      </div>
+      <div class="backdrop is-hidden" data-modal4>
+        <div class="modal">
+          <button type="button" class="close-button" data-modal-close4>
+            <img
+              src="./images/close-modal-icon.svg"
+              width="30"
+              height="30"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1696754499"></div>
+        </div>
+      </div>
+      <div class="backdrop is-hidden" data-modal5>
+        <div class="modal">
+          <button type="button" class="close-button" data-modal-close5>
+            <img
+              src="./images/close-modal-icon.svg"
+              width="30"
+              height="30"
+              alt="close"
+            />
+          </button>
+          <div id="kwiga-widget-1696754567"></div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container">
@@ -1263,9 +1346,30 @@
         .querySelector(".next")
         .addEventListener("click", () => mySiema.next());
     </script>
+    <script src="./js/js-modal.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/sp-supermarquee@latest/dist/SuperMarquee.min.js"></script>
     <script src="./js/move-string.js" type="module"></script>
     <script src="./js/faq.js" type="module"></script>
     <script src="./js/timer.js" type="module"></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1696754280&uuid=0850507f-3dc1-4eff-83d6-0928fbefc741&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1696754402&uuid=fe4caa34-93f8-4087-9875-06c096e172f1&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1696754455&uuid=ff53a6f7-399c-47f8-bd1c-880e9cb09f35&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1696754499&uuid=e6c132ad-8cf8-47f2-97d6-3f4ab864b41b&producer=https://kwiga.com/"
+    ></script>
+    <script
+      type="module"
+      src="https://kwiga.com/build/js/kwiga-widget.js?t=1696754567&uuid=3f216b86-bf3c-456d-b746-51ae198f429a&producer=https://kwiga.com/"
+    ></script>
   </body>
 </html>
