@@ -9,4 +9,4 @@ const mySuperMarquee = new SuperMarquee(
   }
 );
 
-console.clear();
+// console.clear();
