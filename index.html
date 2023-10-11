@@ -1247,6 +1247,21 @@
           </div>
         </div>
       </section>
+      <div class="backdrop-agreement" data-agreement-modal>
+        <div class="modal-agreement">
+          <div class="wrapper">
+            <p>
+              Цей сайт використовує <a href="">файли cookie.</a> Продовжуючи
+              використовувати цей сайт, ви погоджуєтесь на їх використання. Для
+              отримання більш детальної інформації, будь ласка, ознайомтесь з
+              нашою <a href="">Політикою конфіденційності</a>
+            </p>
+            <button type="button" class="agreement-button" data-agreement-close>
+              я згоден/на
+            </button>
+          </div>
+        </div>
+      </div>
       <div class="backdrop is-hidden" data-modal1>
         <div class="modal">
           <button type="button" class="close-button" data-modal-close1>
@@ -1346,6 +1361,7 @@
         .querySelector(".next")
         .addEventListener("click", () => mySiema.next());
     </script>
+    <script src="./js/agreement-use.js" type="module"></script>
     <script src="./js/js-modal.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/sp-supermarquee@latest/dist/SuperMarquee.min.js"></script>
     <script src="./js/move-string.js" type="module"></script>

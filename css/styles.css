@@ -2329,3 +2329,117 @@ p {
 
   cursor: pointer;
 }
+
+/* agreement-modal */
+
+.backdrop-agreement {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+
+  padding-top: 200px;
+  padding-bottom: 114px;
+
+  opacity: 1;
+  visibility: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  overflow-y: scroll;
+
+  z-index: 999;
+}
+
+.backdrop-agreement.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.modal-agreement {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 30px 20px;
+  width: 300px;
+  border-radius: 20px;
+
+  background: #ffffff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-agreement p {
+  color: #0e0e0e;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 15.6px */
+
+  max-width: 260px;
+
+  margin-bottom: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-agreement p a {
+  color: #515e4c;
+}
+
+.agreement-button {
+  display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  color: #fff;
+  font-family: Manrope;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+
+  padding: 10px 40px;
+
+  width: 260px;
+
+  border-radius: 60px;
+  background: #515e4c;
+
+  border: none;
+
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-agreement {
+    padding: 30px 20px;
+    width: 520px;
+    border-radius: 20px;
+  }
+
+  .modal-agreement p {
+    font-size: 16px;
+    max-width: 400px;
+  }
+
+  .agreement-button {
+    font-size: 18px;
+  }
+}
