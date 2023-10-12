@@ -2060,15 +2060,51 @@ p {
   color: #9bc19a;
 }
 
+.sect-six-info {
+  color: #76926b;
+  text-align: center;
+  font-family: Fixel;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 24px */
+}
+
+.lesson-description {
+  color: #76926b;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 16.8px */
+}
+
 @media screen and (min-width: 768px) {
   .sect-six-title {
     font-size: 36px;
+  }
+
+  .sect-six-info {
+    font-size: 24px;
+  }
+
+  .lesson-description {
+    max-width: 320px;
+
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .sect-six-title {
     font-size: 40px;
+  }
+
+  .lesson-description {
+    font-size: 18px;
+    max-width: 348px;
   }
 }
 
@@ -2079,6 +2115,8 @@ p {
 
   margin-left: auto;
   margin-right: auto;
+
+  margin-bottom: 60px;
 }
 
 .isOpen .content {
@@ -2209,51 +2247,274 @@ p {
 
 /* footer */
 .footer {
-  padding-top: 0;
+  padding-top: 60px;
   padding-bottom: 60px;
+
+  background-color: #0e0e0e;
 }
 
-.footer-title {
-  color: #76926b;
-  text-align: center;
-  font-family: Fixel;
-  font-size: 20px;
+.footer .container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  position: relative;
+}
+
+.footer-contacs-container::after {
+  content: "";
+  display: block;
+
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.phone-conatiner {
+  margin-bottom: 30px;
+}
+
+.phone-text {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 4px;
+}
+
+.phone-number {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.working-hours-container {
+  margin-bottom: 30px;
+}
+
+.working-text {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.working-weeks {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.16px;
+}
+
+.working-time {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.16px;
+  text-transform: uppercase;
+}
+
+.working-mail {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.mail-icon {
+  margin-right: 8px;
+}
+
+.mail-link {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 120%; /* 24px */
+  line-height: normal;
+  text-decoration-line: underline;
 }
 
-.footer-description {
-  color: #76926b;
-  text-align: center;
+.footer-contract-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  margin-bottom: 40px;
+}
+
+.contract-link {
+  color: #fff;
   font-family: Manrope;
-  font-size: 14px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  text-decoration: underline;
+}
+
+.fop-text {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 13px;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%; /* 16.8px */
+  line-height: normal;
+
+  margin-bottom: 10px;
+}
+
+.fop-info {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 114.1%; /* 12.551px */
+
+  max-width: 320px;
+}
+
+.social-link-container {
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 @media screen and (min-width: 768px) {
-  .footer-description {
-    max-width: 320px;
+  .footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
-    margin-left: auto;
-    margin-right: auto;
+  .footer .container {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  .footer-contacs-container::after {
+    display: none;
+  }
+
+  .working-hours-container {
+    margin-bottom: 110px;
+  }
+
+  .social-link-container {
+    flex-direction: row;
+    top: unset;
+    right: unset;
+    bottom: 37px;
+    left: 56px;
+  }
+
+  .footer-contract-container {
+    position: absolute;
+    top: 0;
+    right: 56px;
+  }
+
+  .contract-link {
+    text-align: right;
+  }
+
+  .footer-fop {
+    position: absolute;
+    bottom: 0;
+    right: 56px;
+  }
+
+  .fop-text {
+    text-align: right;
+    font-size: 14px;
+  }
+
+  .fop-info {
+    max-width: 345px;
+    font-size: 12px;
+  }
+
+  .phone-text {
+    margin-bottom: 10px;
+  }
+
+  .working-text {
+    margin-bottom: 10px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .footer {
-    padding-bottom: 100px;
+  .footer .container {
+    padding-left: 158px;
+    padding-right: 158px;
   }
 
-  .footer-title {
-    font-size: 24px;
+  .social-link-container {
+    flex-direction: row;
+    top: unset;
+    right: unset;
+    bottom: 37px;
+    left: 158px;
   }
 
-  .footer-description {
+  .phone-text {
     font-size: 18px;
-    max-width: 348px;
+  }
+
+  .phone-number {
+    font-size: 18px;
+  }
+
+  .working-text {
+    font-size: 18px;
+  }
+
+  .working-weeks {
+    font-size: 18px;
+  }
+
+  .working-time {
+    font-size: 18px;
+  }
+
+  .contract-link {
+    font-size: 18px;
+  }
+
+  .mail-link {
+    font-size: 18px;
+  }
+
+  .fop-text {
+    font-size: 16px;
+  }
+
+  .fop-info {
+    font-size: 14px;
+    max-width: 400px;
   }
 }
 
