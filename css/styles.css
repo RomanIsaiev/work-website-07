@@ -2458,6 +2458,8 @@ p {
     position: absolute;
     bottom: 0;
     right: 56px;
+
+    text-align: right;
   }
 
   .fop-text {
