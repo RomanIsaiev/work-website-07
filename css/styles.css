@@ -1882,6 +1882,7 @@ p {
 .section-five button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 .sect-five-title-desktop {
