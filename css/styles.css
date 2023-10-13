@@ -1272,7 +1272,7 @@ p {
 
   margin-bottom: 20px;
 
-  width: 223px;
+  width: 230px;
 
   margin-right: auto;
 }
@@ -1280,6 +1280,16 @@ p {
 .sect-four-list .item-title-container .item-title span {
   font-size: 14px;
   font-weight: 400;
+}
+
+.sect-four-list .item-title-container .item-title .span-two {
+  color: #0e0e0e;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 80%; /* 14.4px */
 }
 
 .date-container {
@@ -1475,13 +1485,29 @@ p {
   color: #0e0e0e;
   text-align: center;
   font-family: Manrope;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 120%; /* 21.6px */
+  font-weight: 700;
+  line-height: 120%; /* 19.2px */
+
+  margin-bottom: 20px;
 }
 
-.four-lesson-list .item-title::after {
+.four-lesson-list .item-title span {
+  font-weight: 400;
+}
+
+.four-lesson-list .item-title .span-two {
+  color: #0e0e0e;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 120%; /* 14.4px */
+}
+
+.four-lesson-list .after-decoration::before {
   content: "";
   display: block;
 
@@ -1499,6 +1525,10 @@ p {
   margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.four-lesson-list .date-container-space {
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1587,13 +1617,25 @@ p {
     font-size: 24px;
   }
 
+  .four-lesson-list {
+    gap: 40px;
+  }
+
   .four-lesson-list .list-item {
-    max-width: 410px;
-    padding: 30px 55px;
+    max-width: 450px;
+    padding: 30px 20px;
   }
 
   .four-lesson-list .item-title {
     font-size: 20px;
+  }
+
+  .four-lesson-list .item-title .span-two {
+    font-size: 14px;
+  }
+
+  .sect-four-list .item-title-container .item-title .span-two {
+    font-size: 14px;
   }
 }
 
