@@ -1531,6 +1531,39 @@ p {
   margin-bottom: 20px;
 }
 
+.lesson-plan-button {
+  padding: 10px 10px;
+
+  max-width: 168px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 60px;
+  border: 1px solid #0e0e0e;
+  background: #f3f9f1;
+
+  cursor: pointer;
+}
+
+.lesson-plan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.lesson-plan-button p {
+  color: #1f1f1f;
+  font-family: Manrope;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-transform: uppercase;
+}
+
 @media screen and (min-width: 768px) {
   .section-four {
     padding-top: 80px;
@@ -1636,6 +1669,14 @@ p {
 
   .sect-four-list .item-title-container .item-title .span-two {
     font-size: 14px;
+  }
+
+  .lesson-plan-button {
+    max-width: 201px;
+  }
+
+  .lesson-plan-button p {
+    font-size: 18px;
   }
 }
 
