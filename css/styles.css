@@ -2222,6 +2222,8 @@ p {
 .question {
   background-color: var(--white-text-color);
   border-radius: 15px;
+
+  cursor: pointer;
 }
 
 .question:last-child {
