@@ -271,8 +271,6 @@ p {
   z-index: -1;
   bottom: 0;
   left: 32px;
-  /* animation: spin 0.0001s linear 0s infinite;
-  transform: translate(-50%, -50%); */
 }
 
 @keyframes spin {
@@ -1309,7 +1307,8 @@ p {
   margin-right: auto;
   background-color: #a1b997;
 
-  margin-top: 40px;
+  margin-top: 60px;
+  /*! margin-top: 40px; */
   margin-bottom: 40px;
 }
 
@@ -1522,7 +1521,28 @@ p {
 }
 
 .four-border-container {
+  /* ! timeout */
+  position: relative;
+
   margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* ! timeout */
+.text-lesson-description-one {
+  position: absolute;
+  top: 941px;
+  right: 0;
+
+  color: #0e0e0e;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  max-width: 320px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1562,6 +1582,26 @@ p {
   line-height: normal;
   text-decoration-line: underline;
   text-transform: uppercase;
+}
+/* ! timeout */
+.text-lesson-description {
+  color: #0e0e0e;
+  text-align: center;
+  font-family: Manrope;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 20px;
+}
+/* ! timeout */
+.space-container-lesson {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -1678,6 +1718,12 @@ p {
   .lesson-plan-button p {
     font-size: 18px;
   }
+  /* ! timeout */
+  .text-lesson-description-one {
+    position: absolute;
+    top: 1022px;
+    right: 170px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -1714,10 +1760,13 @@ p {
   .four-item-decoration::after {
     display: none;
   }
+
+  /* ! timeout */
   .date-container-decoration {
     padding-right: 15px;
     padding-left: 15px;
-    padding-bottom: 46px;
+    /* padding-bottom: 46px; */
+    padding-bottom: 66px;
     border-bottom: 2px solid #a1b997;
   }
 
@@ -1766,6 +1815,18 @@ p {
 
     margin-left: 0;
     margin-right: 0;
+  }
+  /* ! timeout */
+  .space-container-lesson {
+    display: block;
+
+    height: 64px;
+  }
+
+  .text-lesson-description-one {
+    position: absolute;
+    top: 565px;
+    right: 155px;
   }
 }
 
