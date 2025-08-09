@@ -677,6 +677,7 @@ p {
   transform: translateX(-50%);
   font-size: 14px;
 }
+
 .timer__item:not(:last-child)::after {
   content: ":";
   position: absolute;
@@ -2723,6 +2724,7 @@ p {
 }
 
 .backdrop.is-hidden {
+  display: none;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
